@@ -1,9 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/styles.css" />
         <title>A Simple Form</title>
     </head>
     <body>
-        
+       <h1>Fill in your Biodata</h1>
+       <form method="*">
+          <fieldset>
+            <legend>Biodata</legend>
+           <div>
+            <label for="fullname">Fullname</label>
+            <input type="text" name="fullname" id="fullname"/>
+           </div>
+           <div>
+            <label for="email">Email Address</label>
+            <input type="email" name="email address" id="email"/>
+           </div>
+           <div>
+            <label for="number">Phone Number</label>
+            <input type="number" name="phone number" id="phone number"/>
+           </div>
+           <div>
+            <label for="male">Male</label>
+            <input type="radio" name="sex" id="male" value="male"/>
+            <label for="female">Female</label>
+            <input type="radio" name="sex" id="female" value="female"/>
+           </div>
+           <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password"/>
+           </div>
+            <input type="button" name="Submit" value="Submit"/>
+          </fieldset>
+
+
+       </form>
     </body>
 </html>
