@@ -6,37 +6,53 @@
         <link rel="stylesheet" href="./css/styles.css" />
         <title>A Simple Form</title>
     </head>
-    <body>
-       <h1>Fill in your Biodata</h1>
-       <form method="*">
+    <body style="background-color: blue;">
+       <h1 style="color: cornsilk;">Fill in your Biodata</h1>
+       <form onsubmit="yourfunctionname()">
           <fieldset>
-            <legend>Biodata</legend>
+            <legend><h1>Biodata</h1></legend>
            <div>
             <label for="fullname">Fullname</label>
-            <input type="text" name="fullname" id="fullname"/>
+            <br />
+            <input type="text" name="fullname" id="fullname" size="40" placeholder="Enter your name ..." required/>
+           <br />
            </div>
            <div>
             <label for="email">Email Address</label>
-            <input type="email" name="email address" id="email"/>
+            <br />
+            <input type="email" size="40" placeholder="example@yahoo.com" name="email address" id="email" required/>
+            <br />
            </div>
            <div>
             <label for="number">Phone Number</label>
-            <input type="number" name="phone number" id="phone number"/>
-           </div>
-           <div>
+           <br />
+            <input type="number" size="40" placeholder="+234-000-0000-000" name="phone number" id="phone number" required/>
+           <br />
+          </div>
+          <div>
+            
             <label for="male">Male</label>
-            <input type="radio" name="sex" id="male" value="male"/>
+            <input type="radio" name="sex" id="male" value="male" required/>
             <label for="female">Female</label>
-            <input type="radio" name="sex" id="female" value="female"/>
+            <input type="radio" name="sex" id="female" value="female" required/>
+            
            </div>
+
            <div>
             <label for="password">Password</label>
-            <input type="password" name="password" id="password"/>
+            <br />
+            <input type="password" size="40" placeholder="password" name="password" id="password" required/>
+            <br />
            </div>
-            <input type="button" name="Submit" value="Submit"/>
+
+            <input type="button" name="Submit" value="Submit" id="submit"/>
           </fieldset>
-
-
-       </form>
+        </form>
+        <script>
+            alert("you're welcome");
+            function yourfunctionname() {
+                alert("successfully submitted");
+            }
+        </script>
     </body>
 </html>
